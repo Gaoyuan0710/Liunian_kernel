@@ -32,7 +32,8 @@ link:
 clean:
 	$(RM) $(S_OBJECTS) $(C_OBJECTS) Liunian_kernel
 
-.PHONY:update_image:
+.PHONY:update_image
+update_image:
 	sudo mount floppy.img /mnt/kernel
 	sudo cp Liunian_kernel /mnt/kernel/Liunian_kernel
 	sleep 1

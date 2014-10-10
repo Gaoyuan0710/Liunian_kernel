@@ -14,7 +14,7 @@ SECTIONS
 		. = ALIGN(4096);
 	}
 
-	.data ：
+	.data :
 	{
 		*(.text)
 		*(.rodata)
@@ -39,5 +39,5 @@ SECTIONS
 		. = ALIGN(4096);
 	}
 
-	/DISCARD/ : { * (.comment) *(.en_frame)}
+	/DISCARD/ : { * (.comment ) *(.en_frame ) }
 }
